@@ -1,0 +1,286 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trascope.final_ya_mwisho_lam.Account"
+    android:background="@color/white">
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/tool_bar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearlayout"
+                android:layout_below="@+id/toolbar"
+                android:background="#dddddd"
+                android:padding="5dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:text="Change profile photo"
+                    android:background="#dddddd"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/changeProfPicBtn" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="35dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/bluedeep"
+                    android:textColor="@color/white"
+                    android:text="Save"
+                    android:id="@+id/saveBtn" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearlayout"
+                android:padding="5dp">
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:indeterminate="true"
+                    android:id="@+id/progressBar"/>
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/profileImg"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/default_user"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Name:"
+                            android:textStyle="bold"
+                            android:id="@+id/textView3" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="14sp"
+                            android:background="@drawable/edit_text_about_background"
+                            android:text="Cecil Migayi"
+                            android:ems="10"
+                            android:id="@+id/name"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1" />
+
+                        </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:orientation="horizontal">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="Email:"
+                               android:textStyle="bold"
+                               android:id="@+id/textView4" />
+
+                           <EditText
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="5dp"
+                               android:textSize="14sp"
+                               android:background="@drawable/edit_text_about_background"
+                               android:inputType="textPersonName"
+                               android:text="migayicecil@gmail.com"
+                               android:ems="10"
+                               android:id="@+id/email"
+                               android:layout_gravity="center_vertical"
+                               android:layout_weight="1" />
+
+                           </LinearLayout>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="35dp"
+                        android:background="#eeeeee"
+                        android:textAllCaps="false"
+                        android:padding="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Change password"
+                        android:id="@+id/changePwdBtn"/>
+
+                    </LinearLayout>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#9A9B9C"
+                android:layout_marginBottom="1dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Home:"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/edit_text_about_background"
+                        android:id="@+id/textHome"
+                        android:inputType="textCapWords"
+                        android:hint="Home"
+                        android:text=""/>
+                    <AutoCompleteTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords"
+                        android:dropDownWidth="200dp"
+                        android:dropDownHorizontalOffset="-30dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/edit_text_about_background"
+                        android:text="Kenya"
+                        android:id="@+id/homeCountry"
+                        android:hint="Country Name"/>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#9A9B9C"
+                    android:layout_marginBottom="1dp"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Work/School:"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/edit_text_about_background"
+                        android:hint="Work/School"
+                        android:id="@+id/textWork"
+                        android:text=""/>
+                    <AutoCompleteTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords"
+                        android:dropDownWidth="200dp"
+                        android:dropDownHorizontalOffset="-30dp"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/edit_text_about_background"
+                        android:text="Kenya"
+                        android:id="@+id/workCountry"
+                        android:hint="Country Name"/>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#9A9B9C"
+                    android:layout_marginBottom="1dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Bio:"
+                        android:id="@+id/textView5" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textMultiLine"
+                            android:hint="Tell us something about your self"
+                            android:background="@drawable/edit_text_about_background"
+                            android:textSize="14sp"
+                            android:ems="10"
+                            android:maxLength="100"
+                            android:id="@+id/textBio" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(Max 100 characters)"
+                            android:textSize="13sp"
+                            android:textColor="#ff5722"
+                            android:id="@+id/textView6" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#9A9B9C"
+                    android:layout_marginBottom="1dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

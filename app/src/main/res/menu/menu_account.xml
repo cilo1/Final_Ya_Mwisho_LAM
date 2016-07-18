@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.trascope.final_ya_mwisho_lam.Account">
+    <item android:id="@+id/action_home" android:title="Home" android:icon="@drawable/ic_home_white_24dp"
+        android:orderInCategory="70" app:showAsAction="always" />
+    <item android:id="@+id/action_create" android:title="create" android:icon="@drawable/ic_create_white_24dp"
+        android:orderInCategory="80" app:showAsAction="always" />
+    <item android:id="@+id/action_search" android:title="Search" android:icon="@drawable/ic_search_white_24dp"
+        android:orderInCategory="90" app:showAsAction="always" />
+    <item android:id="@+id/action_friends" android:title="Friends" android:icon="@drawable/ic_group_white_24dp"
+        android:orderInCategory="100" app:showAsAction="always" />
+    <item android:id="@+id/action_account" android:title="Account" android:icon="@drawable/ic_account_circle_white_24dp"
+        android:orderInCategory="110" app:showAsAction="always" />
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="120" app:showAsAction="never" />
+</menu>

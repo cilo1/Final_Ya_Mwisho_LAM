@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.trascope.final_ya_mwisho_lam.RegMoreUserInfo">
+
+    <include layout="@layout/tool_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#eeeeee"
+                    android:textColor="#000000"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:text="Where do you live? (Home)"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Your home"
+                        android:textSize="14sp"
+                        android:background="@drawable/edit_text_about_background"
+                        android:id="@+id/etHome" />
+
+                    <AutoCompleteTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords"
+                        android:dropDownWidth="200dp"
+                        android:dropDownHorizontalOffset="-30dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/edit_text_about_background"
+                        android:hint="Country Name"
+                        android:id="@+id/etHomeCountry" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#cccccc"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#eeeeee"
+                    android:textColor="#000000"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:text="Where do you work? (Work)"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Place of work or School"
+                        android:textSize="14sp"
+                        android:background="@drawable/edit_text_about_background"
+                        android:id="@+id/etWork" />
+
+                    <AutoCompleteTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords"
+                        android:dropDownWidth="200dp"
+                        android:dropDownHorizontalOffset="-30dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="14sp"
+                        android:background="@drawable/edit_text_about_background"
+                        android:hint="Country Name"
+                        android:id="@+id/etWorkCountry" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#cccccc"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:inputType="textMultiLine"
+                    android:hint="Tell us something about yourself..(Bio)"
+                    android:textSize="14sp"
+                    android:background="@drawable/edit_text_about_background"
+                    android:maxLength="120"
+                    android:ems="10"
+                    android:id="@+id/etBio" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:text="max 120 characters"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cccccc"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:minHeight="35dp"
+                    android:background="@color/bluedeep"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:text="Done"
+                    android:id="@+id/btnDone" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+
+

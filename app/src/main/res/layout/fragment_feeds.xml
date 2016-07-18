@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.trascope.final_ya_mwisho_lam.Home">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loadinglayout"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:id="@+id/progressBar"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wait, loading content..."/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="#ffffb8"
+        android:id="@+id/notifyLinearlayout"
+        android:visibility="gone"
+        android:elevation="10dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pop_info_green"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textLocationMark"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:text=""/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/later"
+                android:minHeight="35dp"
+                android:text="Later"
+                android:background="#ffffb8"
+                android:textColor="#66c664"
+                android:textStyle="bold"
+                android:elevation="5dp"
+                android:layout_alignParentLeft="true"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/proceed"
+                android:minHeight="35dp"
+                android:text="Proceed"
+                android:background="#ffffb8"
+                android:textColor="#66c664"
+                android:textStyle="bold"
+                android:elevation="5dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_below="@+id/notifyLinearlayout"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/listView" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

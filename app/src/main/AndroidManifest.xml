@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.trascope.final_ya_mwisho_lam" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+    <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_lam_launcher2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name=".Search"
+            android:label="@string/title_activity_search" >
+        </activity>
+        <activity
+            android:name=".Create"
+            android:label="@string/title_activity_create" >
+        </activity>
+        <activity
+            android:name=".Account"
+            android:label="@string/title_activity_account" >
+        </activity>
+        <activity
+            android:name=".Friends"
+            android:label="@string/title_activity_friends" >
+        </activity>
+        <activity
+            android:name=".HowItWorks"
+            android:label="@string/title_activity_how_it_works" >
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name=".UserCommentsActivity"
+            android:label="@string/title_activity_user_comments" >
+            android:windowSoftInputMode="adjustPan"
+            android:isScrollContainer="false"
+        </activity>
+        <activity
+            android:name=".UserProfileActivity"
+            android:label="@string/title_activity_user_profile" >
+        </activity>
+        <activity
+            android:name=".InviteFriends"
+            android:label="@string/title_activity_invite_friends" >
+        </activity>
+        <activity
+            android:name=".AddPhotos"
+            android:label="@string/title_activity_add_photos" >
+        </activity>
+        <activity
+            android:name=".FeedItemActivity"
+            android:label="@string/title_activity_feed_item" >
+        </activity>
+        <activity
+            android:name=".Report"
+            android:label="@string/title_activity_report" >
+        </activity>
+        <activity
+            android:name=".ReportIncident"
+            android:label="@string/title_activity_report_incident" >
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".RegMoreUserInfo"
+            android:label="@string/title_activity_reg_more_user_info" >
+        </activity>
+        <activity
+            android:name=".UserGroupData"
+            android:label="@string/title_activity_user_group_data" >
+        </activity>
+        <activity
+            android:name=".OpenTourIntro"
+            android:label="OpenTourIntro" >
+        </activity>
+        <activity
+            android:name=".OpenTour"
+            android:label="@string/title_activity_open_tour" >
+        </activity>
+        <activity
+            android:name=".RegMoreUserInfoFinal"
+            android:label="@string/title_activity_reg_more_user_info_final" >
+        </activity>
+        <activity
+            android:name=".MytourActivity"
+            android:label="@string/title_activity_mytour" >
+        </activity>
+        <activity
+            android:name=".GetLocation"
+            android:label="@string/title_activity_location" >
+        </activity>
+        <activity
+            android:name=".Favorite"
+            android:label="@string/title_activity_favorite" >
+        </activity>
+        <activity
+            android:name=".ForgotPassword"
+            android:label="@string/title_activity_forgot_password" >
+        </activity>
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/title_activity_search" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <service
+            android:name=".MyLocationService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name=".SelectedFeedActivity"
+            android:label="@string/title_activity_selected_feed" >
+        </activity>
+    </application>
+
+</manifest>

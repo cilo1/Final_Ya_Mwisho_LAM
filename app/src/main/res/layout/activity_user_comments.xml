@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trascope.final_ya_mwisho_lam.UserCommentsActivity">
+        <include android:id="@+id/toolbar"
+            layout="@layout/tool_bar"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/toolbar">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    android:padding="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:scaleType="centerCrop"
+                            android:layout_height="50dp"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/imgd"
+                            android:id="@+id/userImage" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="60dp"
+                            android:padding="5dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textAbout"
+                                android:text="weweqwe"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textPlace"
+                                android:textStyle="bold"
+                                android:text="nai"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/textTime"
+                            android:textColor="#747575"
+                            android:textSize="13sp"
+                            android:text="2hrs"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#cccccc"/>
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:layout_marginBottom="25dp"
+                    android:id="@+id/listView">
+
+                </ListView>
+
+            </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:hint="Add a comment.."
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/etComment" />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:id="@+id/postCommentBtn"
+            android:background="@color/bluedeep"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_send_black_24dp"/>
+
+        </RelativeLayout>
+
+
+</RelativeLayout>

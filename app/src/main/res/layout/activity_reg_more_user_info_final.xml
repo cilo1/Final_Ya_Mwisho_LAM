@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trascope.final_ya_mwisho_lam.RegMoreUserInfoFinal"
+    android:background="@color/white">
+
+    <include layout="@layout/tool_bar"
+        android:id="@+id/toolbar"/>
+
+    <TextView
+        android:id="@+id/textUploadMsg"
+        android:text="Profile Photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#575757"
+        android:layout_below="@+id/toolbar"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textMsgFooter"
+        android:layout_below="@+id/textUploadMsg"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp"
+        android:text="[ We recommend you upload your personal photo ]"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textMsgFooter"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="#eeeeee"
+            android:id="@+id/profileImg"
+            android:src="@drawable/default_user"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bluedeep"
+            android:textColor="@color/white"
+            android:id="@+id/selectBtn"
+            android:text="Select profile photo"/>
+
+        </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnProceed"
+            android:text="Proceed"/>
+
+        </RelativeLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="true"
+        android:id="@+id/progressBar"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.trascope.final_ya_mwisho_lam.OpenTour">
+    <item android:id="@+id/action_read_open_tour" android:icon="@drawable/pop_info_white" android:title="about"
+        android:orderInCategory="100" app:showAsAction="ifRoom" />
+</menu>

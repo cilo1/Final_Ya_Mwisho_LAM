@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="5dp"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/tourImage"
+        android:src="@drawable/no_image2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bluedeep"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:id="@+id/tourName"
+            android:text="Loading..."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#404040"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:id="@+id/placeName"
+            android:text="Loading..."/>
+        </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/totalVids"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:text="Videos 20"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentRight="true"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:id="@+id/totalPhotos"
+            android:text="Photos 100"/>
+
+        </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/white">
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tour_name"
+        android:layout_centerHorizontal="true"
+        android:hint="Tour Name"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tour_name"
+        android:id="@+id/linearlayout1">
+
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/place_name"
+            android:layout_centerHorizontal="true"
+            android:hint="Place Name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=","/>
+
+        <EditText
+            android:layout_width="140dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/city_name"
+            android:layout_centerHorizontal="true"
+            android:hint="City Name"/>
+
+        </LinearLayout>
+
+    <AutoCompleteTextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:inputType="textCapWords"
+        android:id="@+id/autoCountry"
+        android:hint="Country Name"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearlayout"
+        android:layout_below="@+id/autoCountry"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Set Date"
+            android:id="@+id/btnSetDate" />
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:background="#eeeeee"
+            android:padding="5dp"
+            android:id="@+id/datePicked"
+            android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/bluedeep"
+        android:minHeight="35dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:id="@+id/add_tour_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linearlayout"
+        android:layout_marginTop="10dp"
+        android:text="Start open tour"/>
+
+</RelativeLayout>

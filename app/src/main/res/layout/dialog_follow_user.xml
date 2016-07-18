@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bluedeep"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:text="test"
+            android:id="@+id/textView" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/imgd"
+            android:id="@+id/userImg"/>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:orientation="vertical">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Friend"
+                android:onClick="onCheckboxClicked"
+                android:id="@+id/chkFriend"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Family"
+                android:onClick="onCheckboxClicked"
+                android:id="@+id/chkFamily"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WorkMate"
+                android:onClick="onCheckboxClicked"
+                android:id="@+id/chkworkMate"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SchoolMate"
+                android:onClick="onCheckboxClicked"
+                android:id="@+id/chkschoolMate"/>
+            </RadioGroup>
+        </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:minHeight="35dp"
+            android:text="Follow"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:background="@color/bluedeep"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:id="@+id/btnDialogFollow"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/loadingFollow"
+            android:visibility="gone"
+            android:padding="5dp"
+            android:minHeight="35dp"
+            android:background="@color/bluedeep">
+
+            <ProgressBar
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                style="?android:attr/progressBarStyleSmall"
+                android:indeterminate="true"
+                android:visibility="gone"
+                android:id="@+id/favoriteProgressBar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:text="Loading..."/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

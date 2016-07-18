@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Leave A Mark</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="facebook_app_id">910738539019820</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_search">Search</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_policy">Privacy Policy</string>
+    <string name="action_terms">Terms Of Service</string>
+    <string name="action_howitworks">How It Works</string>
+    <string name="title_activity_create">Create</string>
+    <string name="title_activity_account">Account</string>
+    <string name="action_likes">Likes</string>
+    <string name="action_signout">Sign Out</string>
+    <string name="action_favorites">My Favorites</string>
+    <string name="comment_display">I enjoyed my visit at the place I enjoyed my visit at the place enjoyed my visit at the place enjoyed my visit at the place enjoyed my visit at the place enjoyed my visit at the place enjoyed my visit at the place enjoyed my visit at the place enjoyed my visit at the place enjoyed my visit at the place</string>
+    <string name="title_activity_friends">Friends</string>
+    <string name="title_activity_how_it_works">HowItWorks</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_user_comments">UserComments</string>
+    <string name="title_activity_feeds_item">FeedsItemActivity</string>
+    <string name="title_activity_user_profile">UserProfileActivity</string>
+    <string name="disclaimerText">Creating an account means that you agree with Leave A Mark\'s Terms of service and Privacy Policy</string>
+    <string name="title_activity_invite_friends">InviteFriends</string>
+    <string name="action_invite_friends">Invite Friends</string>
+    <string name="title_activity_add_photos">AddPhotos</string>
+    <string name="title_activity_feed_item">FeedItemActivity</string>
+    <string name="title_activity_report">Report</string>
+    <string name="title_activity_report_incident">ReportIncident</string>
+    <string name="title_activity_reg_more_user_info">RegMoreUserInfo</string>
+    <string name="title_activity_user_group_data">UserGroupData</string>
+    <string name="action_my_tours">My tours</string>
+    <string name="action_open_tour">Open tour</string>
+    <string name="open_tour_explained">Open tour improves your travelling experience. You will be able to start a tour and every content you upload in your tour will be clustered in one album. Ofcourse you will have full control of your content. You will be able to delete, edit or make them private.</string>
+    <string name="how_it_works_text_one">Click the \"Open Tour\" button</string>
+    <string name="how_it_works_two">You will be required to give: Tour name, Place to visit, Country and date of tour</string>
+    <string name="how_it_works_three">Once that is done, a tour album will be created. Therefore, any photos that you post while the tour button is \"Open\" will be stored automatically in the created tour album.</string>
+    <string name="how_it_works_four">Once you are done with the tour, you can close the tour by pressing \"Close Tour\" button.</string>
+    <string name="how_it_works_five">The button will change automatically to \"Open\"</string>
+    <string name="title_activity_open_tour">OpenTour</string>
+    <string name="action_read_open_tour">About Open tour</string>
+    <string name="title_activity_reg_more_user_info_final">RegMoreUserInfoFinal</string>
+    <string name="action_close_tour">Close tour</string>
+    <string name="title_activity_mytour">MytourActivity</string>
+    <string name="title_activity_location">Location</string>
+    <string name="action_location">My location</string>
+    <string name="title_activity_favorite">Favorite</string>
+    <string name="title_activity_forgot_password">ForgotPassword</string>
+    <string name="forgot_password_text">If you have forgotten your password, send us your email and we will send you instructions on how to obtain a new password</string>
+    <string name="action_search">search_item</string>
+    <string name="title_activity_selected_feed">SelectedFeedActivity</string>
+
+</resources>
